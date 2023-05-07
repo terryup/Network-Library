@@ -104,10 +104,10 @@ public:
         return begin() + writerIndex_;
     }
 
-    const char* beginWrite() const {
+    const char* beginWriteConst() const {
         return begin() + writerIndex_;
     }
-
+    
     //  从fd上读取数据
     ssize_t readFd(int fd, int *saveErrno);
     //  从fd上发送数据

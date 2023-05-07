@@ -4,6 +4,7 @@
 #include "noncopyable.h"
 #include "Timestamp.h"
 #include "CurrentThread.h"
+#include "TImerQueue.h"
 
 #include <functional>
 #include <vector>
@@ -45,6 +46,20 @@ public:
     //  判断EventLoop对象是否在自己的线程里面
     bool isInLoopThread() const { return threadId_ == CurrentThread::tid(); }
 
+    void runAt(Timestamp timestamp, Functor&& cb){
+        timerQueue_->addTimer(std::move(cb), timestamp, 0.0);
+    }
+
+    void runAfter(double waitTime, Functor&& cb){
+        Timestamp time(addTime(Timestamp::now(), waitTime));
+        runAt(time, std::move(cb));
+    }
+
+    void runEvery(double interval, Functor&& cb){
+        Timestamp timestamp(addTime(Timestamp::now(), interval)); 
+        timerQueue_->addTimer(std::move(cb), timestamp, interval);
+    }
+
 private:
     //  wake up
     void handleRead();
@@ -60,6 +75,7 @@ private:
     const pid_t threadId_;  //  记录当前loop所在线程的ID
     Timestamp pollReturnTime_;  //  poller返回发生事件的channels的时间点
     std::unique_ptr<Poller> poller_;
+    std::unique_ptr<TimerQueue> timerQueue_;
 
     //  主要作用，当mainloop获取一个新用户的channel，通过轮询算法选择一个subloop，通过该成员唤醒subloop处理channel
     int wakeupFd_;  

@@ -31,6 +31,7 @@ EventLoop::EventLoop()
     , callingPendingFunctors_(false)
     , threadId_(CurrentThread::tid()) 
     , poller_(Poller::newDefaultPoller(this))
+    , timerQueue_(new TimerQueue(this))
     , wakeupFd_(CreateEventfd())
     , wakeupChannel_(new Channel(this, wakeupFd_)) {
     LOG_DEB("EventLoop created %p in thread %d \n", this, threadId_);

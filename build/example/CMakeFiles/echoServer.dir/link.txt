@@ -1,0 +1,1 @@
+/usr/bin/c++  -g  -rdynamic CMakeFiles/echoServer.dir/testserver.cc.o  -o ../../example/echoServer -Wl,-rpath,/home/zixuanhuang/webserver/lib ../../lib/libmymuduo.so -lpthread 

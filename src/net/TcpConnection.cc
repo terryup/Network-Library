@@ -57,14 +57,34 @@ void TcpConnection::send(const std::string &buf){
             sendInLoop(buf.c_str(), buf.size());
         }
         else{
+            //  sendInLoop有多重重载，需要使用函数指针确定
+            void(TcpConnection::*fp)(const void* data, size_t len) = &TcpConnection::sendInLoop;
             loop_->runInLoop(std::bind(
-                &TcpConnection::sendInLoop,
+                fp,
                 this,
                 buf.c_str(),
                 buf.size()
             ));
         }
     }
+}
+
+void TcpConnection::send(Buffer *buf){
+    if (state_ == kConnected){
+        if (loop_->isInLoopThread()){
+            sendInLoop(buf->peek(), buf->readableBytes());
+            buf->retrieveAll();
+        }
+        else{
+            //  sendInLoop有多重重载，需要使用函数指针确定
+            void (TcpConnection::*fp)(const std::string& message) = &TcpConnection::sendInLoop;
+            loop_->runInLoop(std::bind(fp, this, buf->retrieveAllAsString()));
+        }
+    }
+}
+
+void TcpConnection::sendInLoop(const std::string& message){
+    sendInLoop(message.data(), message.size());
 }
 
 /*

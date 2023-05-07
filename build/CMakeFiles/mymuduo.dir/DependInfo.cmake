@@ -7,6 +7,11 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/zixuanhuang/webserver/src/base/CurrentThread.cc" "/home/zixuanhuang/webserver/build/CMakeFiles/mymuduo.dir/src/base/CurrentThread.cc.o"
   "/home/zixuanhuang/webserver/src/base/Thread.cc" "/home/zixuanhuang/webserver/build/CMakeFiles/mymuduo.dir/src/base/Thread.cc.o"
   "/home/zixuanhuang/webserver/src/base/Timestamp.cc" "/home/zixuanhuang/webserver/build/CMakeFiles/mymuduo.dir/src/base/Timestamp.cc.o"
+  "/home/zixuanhuang/webserver/src/http/HttpContext.cc" "/home/zixuanhuang/webserver/build/CMakeFiles/mymuduo.dir/src/http/HttpContext.cc.o"
+  "/home/zixuanhuang/webserver/src/http/HttpResponse_test.cc" "/home/zixuanhuang/webserver/build/CMakeFiles/mymuduo.dir/src/http/HttpResponse_test.cc.o"
+  "/home/zixuanhuang/webserver/src/http/HttpServer_test.cc" "/home/zixuanhuang/webserver/build/CMakeFiles/mymuduo.dir/src/http/HttpServer_test.cc.o"
+  "/home/zixuanhuang/webserver/src/http/WebServer.cc" "/home/zixuanhuang/webserver/build/CMakeFiles/mymuduo.dir/src/http/WebServer.cc.o"
+  "/home/zixuanhuang/webserver/src/http/mian.cc" "/home/zixuanhuang/webserver/build/CMakeFiles/mymuduo.dir/src/http/mian.cc.o"
   "/home/zixuanhuang/webserver/src/logger/logger.cc" "/home/zixuanhuang/webserver/build/CMakeFiles/mymuduo.dir/src/logger/logger.cc.o"
   "/home/zixuanhuang/webserver/src/net/Acceptor.cc" "/home/zixuanhuang/webserver/build/CMakeFiles/mymuduo.dir/src/net/Acceptor.cc.o"
   "/home/zixuanhuang/webserver/src/net/Buffer.cc" "/home/zixuanhuang/webserver/build/CMakeFiles/mymuduo.dir/src/net/Buffer.cc.o"
@@ -21,6 +26,8 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/zixuanhuang/webserver/src/net/poller/DefaultPoller.cc" "/home/zixuanhuang/webserver/build/CMakeFiles/mymuduo.dir/src/net/poller/DefaultPoller.cc.o"
   "/home/zixuanhuang/webserver/src/net/poller/EpollPoller.cc" "/home/zixuanhuang/webserver/build/CMakeFiles/mymuduo.dir/src/net/poller/EpollPoller.cc.o"
   "/home/zixuanhuang/webserver/src/net/poller/Poller.cc" "/home/zixuanhuang/webserver/build/CMakeFiles/mymuduo.dir/src/net/poller/Poller.cc.o"
+  "/home/zixuanhuang/webserver/src/timer/Timer.cc" "/home/zixuanhuang/webserver/build/CMakeFiles/mymuduo.dir/src/timer/Timer.cc.o"
+  "/home/zixuanhuang/webserver/src/timer/TimerQueue.cc" "/home/zixuanhuang/webserver/build/CMakeFiles/mymuduo.dir/src/timer/TimerQueue.cc.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -29,7 +36,9 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "../src/base"
   "../src/net"
   "../src/net/poller"
+  "../src/timer"
   "../src/logger"
+  "../src/net/http"
   )
 
 # Targets to which this target links.

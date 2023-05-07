@@ -3,6 +3,8 @@
 /home/zixuanhuang/webserver/include/mymuduo/base/noncopyable.h
 /home/zixuanhuang/webserver/include/mymuduo/base/copyable.h
 /home/zixuanhuang/webserver/include/mymuduo/base/Timestamp.h
+/home/zixuanhuang/webserver/include/mymuduo/timer/Timer.h
+/home/zixuanhuang/webserver/include/mymuduo/timer/TImerQueue.h
 /home/zixuanhuang/webserver/include/mymuduo/net/EventLoopThreadPool.h
 /home/zixuanhuang/webserver/include/mymuduo/net/Callbacks.h
 /home/zixuanhuang/webserver/include/mymuduo/net/Channel.h
@@ -18,3 +20,8 @@
 /home/zixuanhuang/webserver/include/mymuduo/net/Socket.h
 /home/zixuanhuang/webserver/include/mymuduo/net/EventLoopThread.h
 /home/zixuanhuang/webserver/include/mymuduo/logger/logger.h
+/home/zixuanhuang/webserver/include/mymuduo/http/HttpResponse_test.h
+/home/zixuanhuang/webserver/include/mymuduo/http/HttpRequest_test.h
+/home/zixuanhuang/webserver/include/mymuduo/http/WebServer.h
+/home/zixuanhuang/webserver/include/mymuduo/http/HttpContext.h
+/home/zixuanhuang/webserver/include/mymuduo/http/HttpServer_test.h

@@ -5,3 +5,17 @@
 /home/zixuanhuang/webserver/build/CMakeFiles/list_install_components.dir
 /home/zixuanhuang/webserver/build/CMakeFiles/install/local.dir
 /home/zixuanhuang/webserver/build/CMakeFiles/install.dir
+/home/zixuanhuang/webserver/build/src/http/CMakeFiles/install/strip.dir
+/home/zixuanhuang/webserver/build/src/http/CMakeFiles/edit_cache.dir
+/home/zixuanhuang/webserver/build/src/http/CMakeFiles/WebServer.dir
+/home/zixuanhuang/webserver/build/src/http/CMakeFiles/rebuild_cache.dir
+/home/zixuanhuang/webserver/build/src/http/CMakeFiles/list_install_components.dir
+/home/zixuanhuang/webserver/build/src/http/CMakeFiles/install/local.dir
+/home/zixuanhuang/webserver/build/src/http/CMakeFiles/install.dir
+/home/zixuanhuang/webserver/build/example/CMakeFiles/install/strip.dir
+/home/zixuanhuang/webserver/build/example/CMakeFiles/edit_cache.dir
+/home/zixuanhuang/webserver/build/example/CMakeFiles/echoServer.dir
+/home/zixuanhuang/webserver/build/example/CMakeFiles/install.dir
+/home/zixuanhuang/webserver/build/example/CMakeFiles/rebuild_cache.dir
+/home/zixuanhuang/webserver/build/example/CMakeFiles/list_install_components.dir
+/home/zixuanhuang/webserver/build/example/CMakeFiles/install/local.dir

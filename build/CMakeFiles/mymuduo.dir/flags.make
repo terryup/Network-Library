@@ -6,5 +6,5 @@ CXX_FLAGS = -g -fPIC
 
 CXX_DEFINES = -Dmymuduo_EXPORTS
 
-CXX_INCLUDES = -I/home/zixuanhuang/webserver/src/base -I/home/zixuanhuang/webserver/src/net -I/home/zixuanhuang/webserver/src/net/poller -I/home/zixuanhuang/webserver/src/logger 
+CXX_INCLUDES = -I/home/zixuanhuang/webserver/src/base -I/home/zixuanhuang/webserver/src/net -I/home/zixuanhuang/webserver/src/net/poller -I/home/zixuanhuang/webserver/src/timer -I/home/zixuanhuang/webserver/src/logger -I/home/zixuanhuang/webserver/src/net/http 
 

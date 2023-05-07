@@ -7,7 +7,11 @@
             },
             "includePath": [
                 "${workspaceFolder}/**",
-                "${workspaceFolder}/src/include"
+                "${workspaceFolder}/include/mymuduo/base",
+                "${workspaceFolder}/include/mymuduo/net",
+                "${workspaceFolder}/include/mymuduo/logger",
+                "${workspaceFolder}/include/mymuduo/net/poller",
+                "${workspaceFolder}/include/mymuduo/timer"
             ],
             "name": "ROS"
         }

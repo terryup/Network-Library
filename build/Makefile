@@ -56,43 +56,32 @@ CMAKE_BINARY_DIR = /home/zixuanhuang/webserver/build
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target install
-install: preinstall
-	@echo "Install the project..."
-	/usr/bin/cmake -P cmake_install.cmake
-.PHONY : install
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+.PHONY : edit_cache
 
-# Special rule for the target install
-install/fast: preinstall/fast
-	@echo "Install the project..."
-	/usr/bin/cmake -P cmake_install.cmake
-.PHONY : install/fast
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
 
-# Special rule for the target install/local
-install/local: preinstall
-	@echo "Installing only the local directory..."
-	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local
+.PHONY : edit_cache/fast
 
-# Special rule for the target install/local
-install/local/fast: preinstall/fast
-	@echo "Installing only the local directory..."
-	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local/fast
+# Special rule for the target install/strip
+install/strip: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip
 
-# Special rule for the target list_install_components
-list_install_components:
-	@echo "Available install components are: \"Unspecified\""
-.PHONY : list_install_components
-
-# Special rule for the target list_install_components
-list_install_components/fast: list_install_components
-
-.PHONY : list_install_components/fast
+# Special rule for the target install/strip
+install/strip/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip/fast
 
 # Special rule for the target rebuild_cache
 rebuild_cache:
-	@echo "Running CMake to regenerate build system..."
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
 	/usr/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
@@ -101,16 +90,39 @@ rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
 
-# Special rule for the target edit_cache
-edit_cache:
-	@echo "No interactive CMake dialog available..."
-	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
-.PHONY : edit_cache
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
+.PHONY : list_install_components
 
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
 
-.PHONY : edit_cache/fast
+.PHONY : list_install_components/fast
+
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
+
+# Special rule for the target install/local
+install/local/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local/fast
+
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -156,6 +168,32 @@ mymuduo: cmake_check_build_system
 mymuduo/fast:
 	$(MAKE) -f CMakeFiles/mymuduo.dir/build.make CMakeFiles/mymuduo.dir/build
 .PHONY : mymuduo/fast
+
+#=============================================================================
+# Target rules for targets named WebServer
+
+# Build rule for target.
+WebServer: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 WebServer
+.PHONY : WebServer
+
+# fast build rule for target.
+WebServer/fast:
+	$(MAKE) -f src/http/CMakeFiles/WebServer.dir/build.make src/http/CMakeFiles/WebServer.dir/build
+.PHONY : WebServer/fast
+
+#=============================================================================
+# Target rules for targets named echoServer
+
+# Build rule for target.
+echoServer: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 echoServer
+.PHONY : echoServer
+
+# fast build rule for target.
+echoServer/fast:
+	$(MAKE) -f example/CMakeFiles/echoServer.dir/build.make example/CMakeFiles/echoServer.dir/build
+.PHONY : echoServer/fast
 
 src/base/CurrentThread.o: src/base/CurrentThread.cc.o
 
@@ -237,6 +275,141 @@ src/base/Timestamp.s: src/base/Timestamp.cc.s
 src/base/Timestamp.cc.s:
 	$(MAKE) -f CMakeFiles/mymuduo.dir/build.make CMakeFiles/mymuduo.dir/src/base/Timestamp.cc.s
 .PHONY : src/base/Timestamp.cc.s
+
+src/http/HttpContext.o: src/http/HttpContext.cc.o
+
+.PHONY : src/http/HttpContext.o
+
+# target to build an object file
+src/http/HttpContext.cc.o:
+	$(MAKE) -f CMakeFiles/mymuduo.dir/build.make CMakeFiles/mymuduo.dir/src/http/HttpContext.cc.o
+.PHONY : src/http/HttpContext.cc.o
+
+src/http/HttpContext.i: src/http/HttpContext.cc.i
+
+.PHONY : src/http/HttpContext.i
+
+# target to preprocess a source file
+src/http/HttpContext.cc.i:
+	$(MAKE) -f CMakeFiles/mymuduo.dir/build.make CMakeFiles/mymuduo.dir/src/http/HttpContext.cc.i
+.PHONY : src/http/HttpContext.cc.i
+
+src/http/HttpContext.s: src/http/HttpContext.cc.s
+
+.PHONY : src/http/HttpContext.s
+
+# target to generate assembly for a file
+src/http/HttpContext.cc.s:
+	$(MAKE) -f CMakeFiles/mymuduo.dir/build.make CMakeFiles/mymuduo.dir/src/http/HttpContext.cc.s
+.PHONY : src/http/HttpContext.cc.s
+
+src/http/HttpResponse_test.o: src/http/HttpResponse_test.cc.o
+
+.PHONY : src/http/HttpResponse_test.o
+
+# target to build an object file
+src/http/HttpResponse_test.cc.o:
+	$(MAKE) -f CMakeFiles/mymuduo.dir/build.make CMakeFiles/mymuduo.dir/src/http/HttpResponse_test.cc.o
+.PHONY : src/http/HttpResponse_test.cc.o
+
+src/http/HttpResponse_test.i: src/http/HttpResponse_test.cc.i
+
+.PHONY : src/http/HttpResponse_test.i
+
+# target to preprocess a source file
+src/http/HttpResponse_test.cc.i:
+	$(MAKE) -f CMakeFiles/mymuduo.dir/build.make CMakeFiles/mymuduo.dir/src/http/HttpResponse_test.cc.i
+.PHONY : src/http/HttpResponse_test.cc.i
+
+src/http/HttpResponse_test.s: src/http/HttpResponse_test.cc.s
+
+.PHONY : src/http/HttpResponse_test.s
+
+# target to generate assembly for a file
+src/http/HttpResponse_test.cc.s:
+	$(MAKE) -f CMakeFiles/mymuduo.dir/build.make CMakeFiles/mymuduo.dir/src/http/HttpResponse_test.cc.s
+.PHONY : src/http/HttpResponse_test.cc.s
+
+src/http/HttpServer_test.o: src/http/HttpServer_test.cc.o
+
+.PHONY : src/http/HttpServer_test.o
+
+# target to build an object file
+src/http/HttpServer_test.cc.o:
+	$(MAKE) -f CMakeFiles/mymuduo.dir/build.make CMakeFiles/mymuduo.dir/src/http/HttpServer_test.cc.o
+.PHONY : src/http/HttpServer_test.cc.o
+
+src/http/HttpServer_test.i: src/http/HttpServer_test.cc.i
+
+.PHONY : src/http/HttpServer_test.i
+
+# target to preprocess a source file
+src/http/HttpServer_test.cc.i:
+	$(MAKE) -f CMakeFiles/mymuduo.dir/build.make CMakeFiles/mymuduo.dir/src/http/HttpServer_test.cc.i
+.PHONY : src/http/HttpServer_test.cc.i
+
+src/http/HttpServer_test.s: src/http/HttpServer_test.cc.s
+
+.PHONY : src/http/HttpServer_test.s
+
+# target to generate assembly for a file
+src/http/HttpServer_test.cc.s:
+	$(MAKE) -f CMakeFiles/mymuduo.dir/build.make CMakeFiles/mymuduo.dir/src/http/HttpServer_test.cc.s
+.PHONY : src/http/HttpServer_test.cc.s
+
+src/http/WebServer.o: src/http/WebServer.cc.o
+
+.PHONY : src/http/WebServer.o
+
+# target to build an object file
+src/http/WebServer.cc.o:
+	$(MAKE) -f CMakeFiles/mymuduo.dir/build.make CMakeFiles/mymuduo.dir/src/http/WebServer.cc.o
+.PHONY : src/http/WebServer.cc.o
+
+src/http/WebServer.i: src/http/WebServer.cc.i
+
+.PHONY : src/http/WebServer.i
+
+# target to preprocess a source file
+src/http/WebServer.cc.i:
+	$(MAKE) -f CMakeFiles/mymuduo.dir/build.make CMakeFiles/mymuduo.dir/src/http/WebServer.cc.i
+.PHONY : src/http/WebServer.cc.i
+
+src/http/WebServer.s: src/http/WebServer.cc.s
+
+.PHONY : src/http/WebServer.s
+
+# target to generate assembly for a file
+src/http/WebServer.cc.s:
+	$(MAKE) -f CMakeFiles/mymuduo.dir/build.make CMakeFiles/mymuduo.dir/src/http/WebServer.cc.s
+.PHONY : src/http/WebServer.cc.s
+
+src/http/mian.o: src/http/mian.cc.o
+
+.PHONY : src/http/mian.o
+
+# target to build an object file
+src/http/mian.cc.o:
+	$(MAKE) -f CMakeFiles/mymuduo.dir/build.make CMakeFiles/mymuduo.dir/src/http/mian.cc.o
+.PHONY : src/http/mian.cc.o
+
+src/http/mian.i: src/http/mian.cc.i
+
+.PHONY : src/http/mian.i
+
+# target to preprocess a source file
+src/http/mian.cc.i:
+	$(MAKE) -f CMakeFiles/mymuduo.dir/build.make CMakeFiles/mymuduo.dir/src/http/mian.cc.i
+.PHONY : src/http/mian.cc.i
+
+src/http/mian.s: src/http/mian.cc.s
+
+.PHONY : src/http/mian.s
+
+# target to generate assembly for a file
+src/http/mian.cc.s:
+	$(MAKE) -f CMakeFiles/mymuduo.dir/build.make CMakeFiles/mymuduo.dir/src/http/mian.cc.s
+.PHONY : src/http/mian.cc.s
 
 src/logger/logger.o: src/logger/logger.cc.o
 
@@ -616,18 +789,75 @@ src/net/poller/Poller.cc.s:
 	$(MAKE) -f CMakeFiles/mymuduo.dir/build.make CMakeFiles/mymuduo.dir/src/net/poller/Poller.cc.s
 .PHONY : src/net/poller/Poller.cc.s
 
+src/timer/Timer.o: src/timer/Timer.cc.o
+
+.PHONY : src/timer/Timer.o
+
+# target to build an object file
+src/timer/Timer.cc.o:
+	$(MAKE) -f CMakeFiles/mymuduo.dir/build.make CMakeFiles/mymuduo.dir/src/timer/Timer.cc.o
+.PHONY : src/timer/Timer.cc.o
+
+src/timer/Timer.i: src/timer/Timer.cc.i
+
+.PHONY : src/timer/Timer.i
+
+# target to preprocess a source file
+src/timer/Timer.cc.i:
+	$(MAKE) -f CMakeFiles/mymuduo.dir/build.make CMakeFiles/mymuduo.dir/src/timer/Timer.cc.i
+.PHONY : src/timer/Timer.cc.i
+
+src/timer/Timer.s: src/timer/Timer.cc.s
+
+.PHONY : src/timer/Timer.s
+
+# target to generate assembly for a file
+src/timer/Timer.cc.s:
+	$(MAKE) -f CMakeFiles/mymuduo.dir/build.make CMakeFiles/mymuduo.dir/src/timer/Timer.cc.s
+.PHONY : src/timer/Timer.cc.s
+
+src/timer/TimerQueue.o: src/timer/TimerQueue.cc.o
+
+.PHONY : src/timer/TimerQueue.o
+
+# target to build an object file
+src/timer/TimerQueue.cc.o:
+	$(MAKE) -f CMakeFiles/mymuduo.dir/build.make CMakeFiles/mymuduo.dir/src/timer/TimerQueue.cc.o
+.PHONY : src/timer/TimerQueue.cc.o
+
+src/timer/TimerQueue.i: src/timer/TimerQueue.cc.i
+
+.PHONY : src/timer/TimerQueue.i
+
+# target to preprocess a source file
+src/timer/TimerQueue.cc.i:
+	$(MAKE) -f CMakeFiles/mymuduo.dir/build.make CMakeFiles/mymuduo.dir/src/timer/TimerQueue.cc.i
+.PHONY : src/timer/TimerQueue.cc.i
+
+src/timer/TimerQueue.s: src/timer/TimerQueue.cc.s
+
+.PHONY : src/timer/TimerQueue.s
+
+# target to generate assembly for a file
+src/timer/TimerQueue.cc.s:
+	$(MAKE) -f CMakeFiles/mymuduo.dir/build.make CMakeFiles/mymuduo.dir/src/timer/TimerQueue.cc.s
+.PHONY : src/timer/TimerQueue.cc.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... install"
-	@echo "... install/local"
-	@echo "... list_install_components"
-	@echo "... rebuild_cache"
-	@echo "... mymuduo"
 	@echo "... edit_cache"
+	@echo "... install/strip"
+	@echo "... mymuduo"
+	@echo "... rebuild_cache"
+	@echo "... list_install_components"
+	@echo "... install/local"
+	@echo "... install"
+	@echo "... WebServer"
+	@echo "... echoServer"
 	@echo "... src/base/CurrentThread.o"
 	@echo "... src/base/CurrentThread.i"
 	@echo "... src/base/CurrentThread.s"
@@ -637,6 +867,21 @@ help:
 	@echo "... src/base/Timestamp.o"
 	@echo "... src/base/Timestamp.i"
 	@echo "... src/base/Timestamp.s"
+	@echo "... src/http/HttpContext.o"
+	@echo "... src/http/HttpContext.i"
+	@echo "... src/http/HttpContext.s"
+	@echo "... src/http/HttpResponse_test.o"
+	@echo "... src/http/HttpResponse_test.i"
+	@echo "... src/http/HttpResponse_test.s"
+	@echo "... src/http/HttpServer_test.o"
+	@echo "... src/http/HttpServer_test.i"
+	@echo "... src/http/HttpServer_test.s"
+	@echo "... src/http/WebServer.o"
+	@echo "... src/http/WebServer.i"
+	@echo "... src/http/WebServer.s"
+	@echo "... src/http/mian.o"
+	@echo "... src/http/mian.i"
+	@echo "... src/http/mian.s"
 	@echo "... src/logger/logger.o"
 	@echo "... src/logger/logger.i"
 	@echo "... src/logger/logger.s"
@@ -679,6 +924,12 @@ help:
 	@echo "... src/net/poller/Poller.o"
 	@echo "... src/net/poller/Poller.i"
 	@echo "... src/net/poller/Poller.s"
+	@echo "... src/timer/Timer.o"
+	@echo "... src/timer/Timer.i"
+	@echo "... src/timer/Timer.s"
+	@echo "... src/timer/TimerQueue.o"
+	@echo "... src/timer/TimerQueue.i"
+	@echo "... src/timer/TimerQueue.s"
 .PHONY : help
 
 
