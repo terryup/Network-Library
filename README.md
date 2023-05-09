@@ -24,7 +24,7 @@
 
 ## 并发模型
 
-![](/Users/zixuanhuang/Desktop/webserver_explain/68747470733a2f2f63646e2e6e6c61726b2e636f6d2f79757175652f302f323032322f706e672f32363735323037382f313636333332343935353132362d33613830373866652d663237312d346131622d383263372d6237356564666633636461382e706e6723617665726167654875653d253233663465.png)
+![](https://github.com/terryup/Network-Library/blob/master/explain/68747470733a2f2f63646e2e6e6c61726b2e636f6d2f79757175652f302f323032322f706e672f32363735323037382f313636333332343935353132362d33613830373866652d663237312d346131622d383263372d6237356564666633636461382e706e6723617665726167654875653d253233663465.png)
 
 ## 构建项目
 
@@ -95,7 +95,25 @@ HttpRequest_test.h  HttpServer_test.h	  WebServer
 ubuntu% ./WebServer 
 ```
 
-![](/Users/zixuanhuang/Desktop/webserver_explain/截屏2023-05-07 18.46.41.png)
+![](https://github.com/terryup/Network-Library/blob/master/explain/%E6%88%AA%E5%B1%8F2023-05-07%2018.46.41.png)
 
 ## 项目讲解
+
+[Channel模块](https://github.com/terryup/Network-Library/blob/master/explain/Channel.md)
+
+[Poller模块](https://github.com/terryup/Network-Library/blob/master/explain/Poller.md)
+
+[Event Loop模块](https://github.com/terryup/Network-Library/blob/master/explain/EventLoop.md)
+
+[ThreadPool模块](https://github.com/terryup/Network-Library/blob/master/explain/ThreadPool.md)
+
+[Acceptor模块](https://github.com/terryup/Network-Library/blob/master/explain/Acceptor.md)
+
+[Buffer模块](https://github.com/terryup/Network-Library/blob/master/explain/Buffer.md)
+
+[TcpConnection模块](https://github.com/terryup/Network-Library/blob/master/explain/TcpConnection.md)
+
+[TcpServer模块](https://github.com/terryup/Network-Library/blob/master/explain/TcpServer.md)
+
+
 

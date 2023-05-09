@@ -10,7 +10,7 @@
 
 ### Buffer的数据结构
 
-![](/Users/zixuanhuang/Desktop/webserver_explain/20200518112726386.png)
+![](https://github.com/terryup/Network-Library/blob/master/explain/20200518112726386.png)
 
 ```c++
 //  采取 vector 形式，可以自动分配内存, 也可以提前预留空间大小
@@ -27,7 +27,7 @@ buffer的内部是一个`vector<char>`，它是一块连续的内存。他有两
 
 当初始化后，`readerIndex_`和`writerIndex_`会指向同一个位置。
 
-![](/Users/zixuanhuang/Desktop/webserver_explain/20200518114416521.png)
+![](https://github.com/terryup/Network-Library/blob/master/explain/20200518114416521.png)
 
 ```c++
 class Buffer : public copyable{
@@ -63,15 +63,15 @@ private:
 
 向Buffer写入200字节：
 
-![](/Users/zixuanhuang/Desktop/webserver_explain/20200518115637104.png)
+![](https://github.com/terryup/Network-Library/blob/master/explain/20200518115637104.png)
 
 从Buffer读入50字节：
 
-![](/Users/zixuanhuang/Desktop/webserver_explain/20200518120034738.png)
+![](https://github.com/terryup/Network-Library/blob/master/explain/20200518120034738.png)
 
 从Buffer一次性读入150字节：
 
-![](/Users/zixuanhuang/Desktop/webserver_explain/20200518120440227.png)
+![](https://github.com/terryup/Network-Library/blob/master/explain/20200518120440227.png)
 
 ```c++
     void ensureWritableBytes(size_t len){

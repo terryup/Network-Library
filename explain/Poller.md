@@ -18,7 +18,7 @@ poller是事件分发器（event dispatcher）的一种实现方式。事件分�
 
 ## 交互图
 
-![](/Users/zixuanhuang/Desktop/webserver_explain/Poller(基类).png)
+![](https://github.com/terryup/Network-Library/blob/master/explain/Poller(%E5%9F%BA%E7%B1%BB).png)
 
 ## `Poller`类的定义：
 

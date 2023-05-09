@@ -4,7 +4,7 @@
 
 muduo网络库中提到了一个概念：one loop per thread，在写这篇前我也不是非常理解最后画了一个图才有所理解，这里直接上图。
 
-![](/Users/zixuanhuang/Desktop/webserver_explain/one loop per thread.png)
+![](https://github.com/terryup/Network-Library/blob/master/explain/one%20loop%20per%20thread.png)
 
 其实就是一个主线程（main Loop）还有他的子线程（sub Loop），主线程负责监听新连接和任务分配，通过IO线程池中的子线程去处理具体的IO事件和业务逻辑。主线程和子线程都拥有自己的EventLoop对象，主线程中的EventLoop负责监听新连接，接收连接后会把连接交给IO线程池中的某个子线程的EventLoop来处理具体的IO事件和业务逻辑。在IO线程池中，每个子线程也都拥有自己的EventLoop对象。主线程和子线程之间通过线程间的通信方式来传递任务和数据。
 

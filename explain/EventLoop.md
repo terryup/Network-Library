@@ -18,7 +18,7 @@ ChannelList activeChannels_;
 
 EventLoop其重点在于循环调用Poller中实现的`epoll_wait`不断的监听发生的事件，然后再调用相应的事件函数。
 
-![](/Users/zixuanhuang/Desktop/webserver_explain/EventLoop.png)
+![](https://github.com/terryup/Network-Library/blob/master/explain/EventLoop.png)
 
 ## 成员变量
 
@@ -53,7 +53,7 @@ EventLoop其重点在于循环调用Poller中实现的`epoll_wait`不断的监�
 
 ### 判断EventLoop对象是否在自己的线程里面
 
-![](/Users/zixuanhuang/Desktop/webserver_explain/68747470733a2f2f63646e2e6e6c61726b2e636f6d2f79757175652f302f323032322f706e672f32363735323037382f313636333332343935353132362d33613830373866652d663237312d346131622d383263372d6237356564666633636461382e706e6723617665726167654875653d253233663465.png)
+![](https://github.com/terryup/Network-Library/blob/master/explain/68747470733a2f2f63646e2e6e6c61726b2e636f6d2f79757175652f302f323032322f706e672f32363735323037382f313636333332343935353132362d33613830373866652d663237312d346131622d383263372d6237356564666633636461382e706e6723617665726167654875653d253233663465.png)
 
 由于muduo库是主从的Reactor模型，主Reactor（main Event Loop)，负责监听连接，然后通过轮询的方法吧新连接发送到某和从Reactor（sub Event Loop)上维护。
 
