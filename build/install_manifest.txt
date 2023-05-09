@@ -12,13 +12,13 @@
 /home/zixuanhuang/webserver/include/mymuduo/net/Buffer.h
 /home/zixuanhuang/webserver/include/mymuduo/net/poller/Poller.h
 /home/zixuanhuang/webserver/include/mymuduo/net/poller/EpollPoller.h
-/home/zixuanhuang/webserver/include/mymuduo/net/lockqueue.h
 /home/zixuanhuang/webserver/include/mymuduo/net/EventLoop.h
 /home/zixuanhuang/webserver/include/mymuduo/net/TcpServer.h
 /home/zixuanhuang/webserver/include/mymuduo/net/TcpConnection.h
 /home/zixuanhuang/webserver/include/mymuduo/net/InetAddress.h
 /home/zixuanhuang/webserver/include/mymuduo/net/Socket.h
 /home/zixuanhuang/webserver/include/mymuduo/net/EventLoopThread.h
+/home/zixuanhuang/webserver/include/mymuduo/logger/lockqueue.h
 /home/zixuanhuang/webserver/include/mymuduo/logger/logger.h
 /home/zixuanhuang/webserver/include/mymuduo/http/HttpResponse_test.h
 /home/zixuanhuang/webserver/include/mymuduo/http/HttpRequest_test.h

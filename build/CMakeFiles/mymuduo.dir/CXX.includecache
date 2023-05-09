@@ -42,6 +42,16 @@ assert.h
 
 ../src/base/noncopyable.h
 
+../src/logger/lockqueue.h
+queue
+-
+thread
+-
+mutex
+-
+condition_variable
+-
+
 ../src/logger/logger.h
 lockqueue.h
 ../src/logger/lockqueue.h
@@ -178,16 +188,6 @@ memory
 atomic
 -
 unordered_map
--
-
-../src/net/lockqueue.h
-queue
--
-thread
--
-mutex
--
-condition_variable
 -
 
 ../src/net/poller/Poller.h
@@ -377,6 +377,16 @@ TcpServer.h
 /home/zixuanhuang/webserver/src/http/TcpServer.h
 HttpServer_test.h
 /home/zixuanhuang/webserver/src/http/HttpServer_test.h
+
+/home/zixuanhuang/webserver/src/logger/lockqueue.h
+queue
+-
+thread
+-
+mutex
+-
+condition_variable
+-
 
 /home/zixuanhuang/webserver/src/logger/logger.cc
 logger.h

@@ -5,9 +5,9 @@ src/http/CMakeFiles/WebServer.dir/HttpContext.cc.o
  ../src/base/Timestamp.h
  ../src/base/copyable.h
  ../src/base/noncopyable.h
+ ../src/logger/lockqueue.h
  ../src/logger/logger.h
  ../src/net/Buffer.h
- ../src/net/lockqueue.h
  /home/zixuanhuang/webserver/src/http/HttpContext.cc
  /home/zixuanhuang/webserver/src/http/HttpContext.h
  /home/zixuanhuang/webserver/src/http/HttpRequest_test.h
@@ -21,6 +21,7 @@ src/http/CMakeFiles/WebServer.dir/HttpServer_test.cc.o
  ../src/base/Timestamp.h
  ../src/base/copyable.h
  ../src/base/noncopyable.h
+ ../src/logger/lockqueue.h
  ../src/logger/logger.h
  ../src/net/Acceptor.h
  ../src/net/Buffer.h
@@ -32,7 +33,6 @@ src/http/CMakeFiles/WebServer.dir/HttpServer_test.cc.o
  ../src/net/Socket.h
  ../src/net/TcpConnection.h
  ../src/net/TcpServer.h
- ../src/net/lockqueue.h
  ../src/timer/TImerQueue.h
  /home/zixuanhuang/webserver/src/http/HttpRequest_test.h
  /home/zixuanhuang/webserver/src/http/HttpResponse_test.h
@@ -43,6 +43,7 @@ src/http/CMakeFiles/WebServer.dir/WebServer.cc.o
  ../src/base/Timestamp.h
  ../src/base/copyable.h
  ../src/base/noncopyable.h
+ ../src/logger/lockqueue.h
  ../src/logger/logger.h
  ../src/net/Acceptor.h
  ../src/net/Buffer.h
@@ -54,7 +55,6 @@ src/http/CMakeFiles/WebServer.dir/WebServer.cc.o
  ../src/net/Socket.h
  ../src/net/TcpConnection.h
  ../src/net/TcpServer.h
- ../src/net/lockqueue.h
  ../src/timer/TImerQueue.h
  /home/zixuanhuang/webserver/src/http/HttpContext.h
  /home/zixuanhuang/webserver/src/http/HttpRequest_test.h
@@ -66,6 +66,7 @@ src/http/CMakeFiles/WebServer.dir/mian.cc.o
  ../src/base/Timestamp.h
  ../src/base/copyable.h
  ../src/base/noncopyable.h
+ ../src/logger/lockqueue.h
  ../src/logger/logger.h
  ../src/net/Acceptor.h
  ../src/net/Buffer.h
@@ -77,7 +78,6 @@ src/http/CMakeFiles/WebServer.dir/mian.cc.o
  ../src/net/Socket.h
  ../src/net/TcpConnection.h
  ../src/net/TcpServer.h
- ../src/net/lockqueue.h
  ../src/timer/TImerQueue.h
  /home/zixuanhuang/webserver/src/http/HttpRequest_test.h
  /home/zixuanhuang/webserver/src/http/HttpResponse_test.h

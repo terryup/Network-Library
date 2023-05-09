@@ -4,9 +4,9 @@
 src/http/CMakeFiles/WebServer.dir/HttpContext.cc.o: ../src/base/Timestamp.h
 src/http/CMakeFiles/WebServer.dir/HttpContext.cc.o: ../src/base/copyable.h
 src/http/CMakeFiles/WebServer.dir/HttpContext.cc.o: ../src/base/noncopyable.h
+src/http/CMakeFiles/WebServer.dir/HttpContext.cc.o: ../src/logger/lockqueue.h
 src/http/CMakeFiles/WebServer.dir/HttpContext.cc.o: ../src/logger/logger.h
 src/http/CMakeFiles/WebServer.dir/HttpContext.cc.o: ../src/net/Buffer.h
-src/http/CMakeFiles/WebServer.dir/HttpContext.cc.o: ../src/net/lockqueue.h
 src/http/CMakeFiles/WebServer.dir/HttpContext.cc.o: ../src/http/HttpContext.cc
 src/http/CMakeFiles/WebServer.dir/HttpContext.cc.o: ../src/http/HttpContext.h
 src/http/CMakeFiles/WebServer.dir/HttpContext.cc.o: ../src/http/HttpRequest_test.h
@@ -20,6 +20,7 @@ src/http/CMakeFiles/WebServer.dir/HttpServer_test.cc.o: ../src/base/CurrentThrea
 src/http/CMakeFiles/WebServer.dir/HttpServer_test.cc.o: ../src/base/Timestamp.h
 src/http/CMakeFiles/WebServer.dir/HttpServer_test.cc.o: ../src/base/copyable.h
 src/http/CMakeFiles/WebServer.dir/HttpServer_test.cc.o: ../src/base/noncopyable.h
+src/http/CMakeFiles/WebServer.dir/HttpServer_test.cc.o: ../src/logger/lockqueue.h
 src/http/CMakeFiles/WebServer.dir/HttpServer_test.cc.o: ../src/logger/logger.h
 src/http/CMakeFiles/WebServer.dir/HttpServer_test.cc.o: ../src/net/Acceptor.h
 src/http/CMakeFiles/WebServer.dir/HttpServer_test.cc.o: ../src/net/Buffer.h
@@ -31,7 +32,6 @@ src/http/CMakeFiles/WebServer.dir/HttpServer_test.cc.o: ../src/net/InetAddress.h
 src/http/CMakeFiles/WebServer.dir/HttpServer_test.cc.o: ../src/net/Socket.h
 src/http/CMakeFiles/WebServer.dir/HttpServer_test.cc.o: ../src/net/TcpConnection.h
 src/http/CMakeFiles/WebServer.dir/HttpServer_test.cc.o: ../src/net/TcpServer.h
-src/http/CMakeFiles/WebServer.dir/HttpServer_test.cc.o: ../src/net/lockqueue.h
 src/http/CMakeFiles/WebServer.dir/HttpServer_test.cc.o: ../src/timer/TImerQueue.h
 src/http/CMakeFiles/WebServer.dir/HttpServer_test.cc.o: ../src/http/HttpRequest_test.h
 src/http/CMakeFiles/WebServer.dir/HttpServer_test.cc.o: ../src/http/HttpResponse_test.h
@@ -42,6 +42,7 @@ src/http/CMakeFiles/WebServer.dir/WebServer.cc.o: ../src/base/CurrentThread.h
 src/http/CMakeFiles/WebServer.dir/WebServer.cc.o: ../src/base/Timestamp.h
 src/http/CMakeFiles/WebServer.dir/WebServer.cc.o: ../src/base/copyable.h
 src/http/CMakeFiles/WebServer.dir/WebServer.cc.o: ../src/base/noncopyable.h
+src/http/CMakeFiles/WebServer.dir/WebServer.cc.o: ../src/logger/lockqueue.h
 src/http/CMakeFiles/WebServer.dir/WebServer.cc.o: ../src/logger/logger.h
 src/http/CMakeFiles/WebServer.dir/WebServer.cc.o: ../src/net/Acceptor.h
 src/http/CMakeFiles/WebServer.dir/WebServer.cc.o: ../src/net/Buffer.h
@@ -53,7 +54,6 @@ src/http/CMakeFiles/WebServer.dir/WebServer.cc.o: ../src/net/InetAddress.h
 src/http/CMakeFiles/WebServer.dir/WebServer.cc.o: ../src/net/Socket.h
 src/http/CMakeFiles/WebServer.dir/WebServer.cc.o: ../src/net/TcpConnection.h
 src/http/CMakeFiles/WebServer.dir/WebServer.cc.o: ../src/net/TcpServer.h
-src/http/CMakeFiles/WebServer.dir/WebServer.cc.o: ../src/net/lockqueue.h
 src/http/CMakeFiles/WebServer.dir/WebServer.cc.o: ../src/timer/TImerQueue.h
 src/http/CMakeFiles/WebServer.dir/WebServer.cc.o: ../src/http/HttpContext.h
 src/http/CMakeFiles/WebServer.dir/WebServer.cc.o: ../src/http/HttpRequest_test.h
@@ -65,6 +65,7 @@ src/http/CMakeFiles/WebServer.dir/mian.cc.o: ../src/base/CurrentThread.h
 src/http/CMakeFiles/WebServer.dir/mian.cc.o: ../src/base/Timestamp.h
 src/http/CMakeFiles/WebServer.dir/mian.cc.o: ../src/base/copyable.h
 src/http/CMakeFiles/WebServer.dir/mian.cc.o: ../src/base/noncopyable.h
+src/http/CMakeFiles/WebServer.dir/mian.cc.o: ../src/logger/lockqueue.h
 src/http/CMakeFiles/WebServer.dir/mian.cc.o: ../src/logger/logger.h
 src/http/CMakeFiles/WebServer.dir/mian.cc.o: ../src/net/Acceptor.h
 src/http/CMakeFiles/WebServer.dir/mian.cc.o: ../src/net/Buffer.h
@@ -76,7 +77,6 @@ src/http/CMakeFiles/WebServer.dir/mian.cc.o: ../src/net/InetAddress.h
 src/http/CMakeFiles/WebServer.dir/mian.cc.o: ../src/net/Socket.h
 src/http/CMakeFiles/WebServer.dir/mian.cc.o: ../src/net/TcpConnection.h
 src/http/CMakeFiles/WebServer.dir/mian.cc.o: ../src/net/TcpServer.h
-src/http/CMakeFiles/WebServer.dir/mian.cc.o: ../src/net/lockqueue.h
 src/http/CMakeFiles/WebServer.dir/mian.cc.o: ../src/timer/TImerQueue.h
 src/http/CMakeFiles/WebServer.dir/mian.cc.o: ../src/http/HttpRequest_test.h
 src/http/CMakeFiles/WebServer.dir/mian.cc.o: ../src/http/HttpResponse_test.h

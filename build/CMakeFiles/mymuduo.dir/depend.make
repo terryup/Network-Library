@@ -15,9 +15,9 @@ CMakeFiles/mymuduo.dir/src/base/Timestamp.cc.o: ../src/base/Timestamp.h
 CMakeFiles/mymuduo.dir/src/http/HttpContext.cc.o: ../src/base/Timestamp.h
 CMakeFiles/mymuduo.dir/src/http/HttpContext.cc.o: ../src/base/copyable.h
 CMakeFiles/mymuduo.dir/src/http/HttpContext.cc.o: ../src/base/noncopyable.h
+CMakeFiles/mymuduo.dir/src/http/HttpContext.cc.o: ../src/logger/lockqueue.h
 CMakeFiles/mymuduo.dir/src/http/HttpContext.cc.o: ../src/logger/logger.h
 CMakeFiles/mymuduo.dir/src/http/HttpContext.cc.o: ../src/net/Buffer.h
-CMakeFiles/mymuduo.dir/src/http/HttpContext.cc.o: ../src/net/lockqueue.h
 CMakeFiles/mymuduo.dir/src/http/HttpContext.cc.o: ../src/http/HttpContext.cc
 CMakeFiles/mymuduo.dir/src/http/HttpContext.cc.o: ../src/http/HttpContext.h
 CMakeFiles/mymuduo.dir/src/http/HttpContext.cc.o: ../src/http/HttpRequest_test.h
@@ -31,6 +31,7 @@ CMakeFiles/mymuduo.dir/src/http/HttpServer_test.cc.o: ../src/base/CurrentThread.
 CMakeFiles/mymuduo.dir/src/http/HttpServer_test.cc.o: ../src/base/Timestamp.h
 CMakeFiles/mymuduo.dir/src/http/HttpServer_test.cc.o: ../src/base/copyable.h
 CMakeFiles/mymuduo.dir/src/http/HttpServer_test.cc.o: ../src/base/noncopyable.h
+CMakeFiles/mymuduo.dir/src/http/HttpServer_test.cc.o: ../src/logger/lockqueue.h
 CMakeFiles/mymuduo.dir/src/http/HttpServer_test.cc.o: ../src/logger/logger.h
 CMakeFiles/mymuduo.dir/src/http/HttpServer_test.cc.o: ../src/net/Acceptor.h
 CMakeFiles/mymuduo.dir/src/http/HttpServer_test.cc.o: ../src/net/Buffer.h
@@ -42,7 +43,6 @@ CMakeFiles/mymuduo.dir/src/http/HttpServer_test.cc.o: ../src/net/InetAddress.h
 CMakeFiles/mymuduo.dir/src/http/HttpServer_test.cc.o: ../src/net/Socket.h
 CMakeFiles/mymuduo.dir/src/http/HttpServer_test.cc.o: ../src/net/TcpConnection.h
 CMakeFiles/mymuduo.dir/src/http/HttpServer_test.cc.o: ../src/net/TcpServer.h
-CMakeFiles/mymuduo.dir/src/http/HttpServer_test.cc.o: ../src/net/lockqueue.h
 CMakeFiles/mymuduo.dir/src/http/HttpServer_test.cc.o: ../src/timer/TImerQueue.h
 CMakeFiles/mymuduo.dir/src/http/HttpServer_test.cc.o: ../src/http/HttpRequest_test.h
 CMakeFiles/mymuduo.dir/src/http/HttpServer_test.cc.o: ../src/http/HttpResponse_test.h
@@ -53,6 +53,7 @@ CMakeFiles/mymuduo.dir/src/http/WebServer.cc.o: ../src/base/CurrentThread.h
 CMakeFiles/mymuduo.dir/src/http/WebServer.cc.o: ../src/base/Timestamp.h
 CMakeFiles/mymuduo.dir/src/http/WebServer.cc.o: ../src/base/copyable.h
 CMakeFiles/mymuduo.dir/src/http/WebServer.cc.o: ../src/base/noncopyable.h
+CMakeFiles/mymuduo.dir/src/http/WebServer.cc.o: ../src/logger/lockqueue.h
 CMakeFiles/mymuduo.dir/src/http/WebServer.cc.o: ../src/logger/logger.h
 CMakeFiles/mymuduo.dir/src/http/WebServer.cc.o: ../src/net/Acceptor.h
 CMakeFiles/mymuduo.dir/src/http/WebServer.cc.o: ../src/net/Buffer.h
@@ -64,7 +65,6 @@ CMakeFiles/mymuduo.dir/src/http/WebServer.cc.o: ../src/net/InetAddress.h
 CMakeFiles/mymuduo.dir/src/http/WebServer.cc.o: ../src/net/Socket.h
 CMakeFiles/mymuduo.dir/src/http/WebServer.cc.o: ../src/net/TcpConnection.h
 CMakeFiles/mymuduo.dir/src/http/WebServer.cc.o: ../src/net/TcpServer.h
-CMakeFiles/mymuduo.dir/src/http/WebServer.cc.o: ../src/net/lockqueue.h
 CMakeFiles/mymuduo.dir/src/http/WebServer.cc.o: ../src/timer/TImerQueue.h
 CMakeFiles/mymuduo.dir/src/http/WebServer.cc.o: ../src/http/HttpContext.h
 CMakeFiles/mymuduo.dir/src/http/WebServer.cc.o: ../src/http/HttpRequest_test.h
@@ -76,6 +76,7 @@ CMakeFiles/mymuduo.dir/src/http/mian.cc.o: ../src/base/CurrentThread.h
 CMakeFiles/mymuduo.dir/src/http/mian.cc.o: ../src/base/Timestamp.h
 CMakeFiles/mymuduo.dir/src/http/mian.cc.o: ../src/base/copyable.h
 CMakeFiles/mymuduo.dir/src/http/mian.cc.o: ../src/base/noncopyable.h
+CMakeFiles/mymuduo.dir/src/http/mian.cc.o: ../src/logger/lockqueue.h
 CMakeFiles/mymuduo.dir/src/http/mian.cc.o: ../src/logger/logger.h
 CMakeFiles/mymuduo.dir/src/http/mian.cc.o: ../src/net/Acceptor.h
 CMakeFiles/mymuduo.dir/src/http/mian.cc.o: ../src/net/Buffer.h
@@ -87,7 +88,6 @@ CMakeFiles/mymuduo.dir/src/http/mian.cc.o: ../src/net/InetAddress.h
 CMakeFiles/mymuduo.dir/src/http/mian.cc.o: ../src/net/Socket.h
 CMakeFiles/mymuduo.dir/src/http/mian.cc.o: ../src/net/TcpConnection.h
 CMakeFiles/mymuduo.dir/src/http/mian.cc.o: ../src/net/TcpServer.h
-CMakeFiles/mymuduo.dir/src/http/mian.cc.o: ../src/net/lockqueue.h
 CMakeFiles/mymuduo.dir/src/http/mian.cc.o: ../src/timer/TImerQueue.h
 CMakeFiles/mymuduo.dir/src/http/mian.cc.o: ../src/http/HttpRequest_test.h
 CMakeFiles/mymuduo.dir/src/http/mian.cc.o: ../src/http/HttpResponse_test.h
@@ -97,15 +97,15 @@ CMakeFiles/mymuduo.dir/src/http/mian.cc.o: ../src/http/mian.cc
 
 CMakeFiles/mymuduo.dir/src/logger/logger.cc.o: ../src/base/Timestamp.h
 CMakeFiles/mymuduo.dir/src/logger/logger.cc.o: ../src/base/noncopyable.h
-CMakeFiles/mymuduo.dir/src/logger/logger.cc.o: ../src/net/lockqueue.h
+CMakeFiles/mymuduo.dir/src/logger/logger.cc.o: ../src/logger/lockqueue.h
 CMakeFiles/mymuduo.dir/src/logger/logger.cc.o: ../src/logger/logger.cc
 CMakeFiles/mymuduo.dir/src/logger/logger.cc.o: ../src/logger/logger.h
 
 CMakeFiles/mymuduo.dir/src/net/Acceptor.cc.o: ../src/base/Timestamp.h
 CMakeFiles/mymuduo.dir/src/net/Acceptor.cc.o: ../src/base/copyable.h
 CMakeFiles/mymuduo.dir/src/net/Acceptor.cc.o: ../src/base/noncopyable.h
+CMakeFiles/mymuduo.dir/src/net/Acceptor.cc.o: ../src/logger/lockqueue.h
 CMakeFiles/mymuduo.dir/src/net/Acceptor.cc.o: ../src/logger/logger.h
-CMakeFiles/mymuduo.dir/src/net/Acceptor.cc.o: ../src/net/lockqueue.h
 CMakeFiles/mymuduo.dir/src/net/Acceptor.cc.o: ../src/net/Acceptor.cc
 CMakeFiles/mymuduo.dir/src/net/Acceptor.cc.o: ../src/net/Acceptor.h
 CMakeFiles/mymuduo.dir/src/net/Acceptor.cc.o: ../src/net/Channel.h
@@ -119,8 +119,8 @@ CMakeFiles/mymuduo.dir/src/net/Buffer.cc.o: ../src/net/Buffer.h
 CMakeFiles/mymuduo.dir/src/net/Channel.cc.o: ../src/base/CurrentThread.h
 CMakeFiles/mymuduo.dir/src/net/Channel.cc.o: ../src/base/Timestamp.h
 CMakeFiles/mymuduo.dir/src/net/Channel.cc.o: ../src/base/noncopyable.h
+CMakeFiles/mymuduo.dir/src/net/Channel.cc.o: ../src/logger/lockqueue.h
 CMakeFiles/mymuduo.dir/src/net/Channel.cc.o: ../src/logger/logger.h
-CMakeFiles/mymuduo.dir/src/net/Channel.cc.o: ../src/net/lockqueue.h
 CMakeFiles/mymuduo.dir/src/net/Channel.cc.o: ../src/timer/TImerQueue.h
 CMakeFiles/mymuduo.dir/src/net/Channel.cc.o: ../src/net/Channel.cc
 CMakeFiles/mymuduo.dir/src/net/Channel.cc.o: ../src/net/Channel.h
@@ -129,8 +129,8 @@ CMakeFiles/mymuduo.dir/src/net/Channel.cc.o: ../src/net/EventLoop.h
 CMakeFiles/mymuduo.dir/src/net/EventLoop.cc.o: ../src/base/CurrentThread.h
 CMakeFiles/mymuduo.dir/src/net/EventLoop.cc.o: ../src/base/Timestamp.h
 CMakeFiles/mymuduo.dir/src/net/EventLoop.cc.o: ../src/base/noncopyable.h
+CMakeFiles/mymuduo.dir/src/net/EventLoop.cc.o: ../src/logger/lockqueue.h
 CMakeFiles/mymuduo.dir/src/net/EventLoop.cc.o: ../src/logger/logger.h
-CMakeFiles/mymuduo.dir/src/net/EventLoop.cc.o: ../src/net/lockqueue.h
 CMakeFiles/mymuduo.dir/src/net/EventLoop.cc.o: ../src/net/poller/Poller.h
 CMakeFiles/mymuduo.dir/src/net/EventLoop.cc.o: ../src/timer/TImerQueue.h
 CMakeFiles/mymuduo.dir/src/net/EventLoop.cc.o: ../src/net/Channel.h
@@ -159,8 +159,8 @@ CMakeFiles/mymuduo.dir/src/net/InetAddress.cc.o: ../src/net/InetAddress.h
 
 CMakeFiles/mymuduo.dir/src/net/Socket.cc.o: ../src/base/copyable.h
 CMakeFiles/mymuduo.dir/src/net/Socket.cc.o: ../src/base/noncopyable.h
+CMakeFiles/mymuduo.dir/src/net/Socket.cc.o: ../src/logger/lockqueue.h
 CMakeFiles/mymuduo.dir/src/net/Socket.cc.o: ../src/logger/logger.h
-CMakeFiles/mymuduo.dir/src/net/Socket.cc.o: ../src/net/lockqueue.h
 CMakeFiles/mymuduo.dir/src/net/Socket.cc.o: ../src/net/InetAddress.h
 CMakeFiles/mymuduo.dir/src/net/Socket.cc.o: ../src/net/Socket.cc
 CMakeFiles/mymuduo.dir/src/net/Socket.cc.o: ../src/net/Socket.h
@@ -169,8 +169,8 @@ CMakeFiles/mymuduo.dir/src/net/TcpConnection.cc.o: ../src/base/CurrentThread.h
 CMakeFiles/mymuduo.dir/src/net/TcpConnection.cc.o: ../src/base/Timestamp.h
 CMakeFiles/mymuduo.dir/src/net/TcpConnection.cc.o: ../src/base/copyable.h
 CMakeFiles/mymuduo.dir/src/net/TcpConnection.cc.o: ../src/base/noncopyable.h
+CMakeFiles/mymuduo.dir/src/net/TcpConnection.cc.o: ../src/logger/lockqueue.h
 CMakeFiles/mymuduo.dir/src/net/TcpConnection.cc.o: ../src/logger/logger.h
-CMakeFiles/mymuduo.dir/src/net/TcpConnection.cc.o: ../src/net/lockqueue.h
 CMakeFiles/mymuduo.dir/src/net/TcpConnection.cc.o: ../src/timer/TImerQueue.h
 CMakeFiles/mymuduo.dir/src/net/TcpConnection.cc.o: ../src/net/Buffer.h
 CMakeFiles/mymuduo.dir/src/net/TcpConnection.cc.o: ../src/net/Callbacks.h
@@ -185,8 +185,8 @@ CMakeFiles/mymuduo.dir/src/net/TcpServer.cc.o: ../src/base/CurrentThread.h
 CMakeFiles/mymuduo.dir/src/net/TcpServer.cc.o: ../src/base/Timestamp.h
 CMakeFiles/mymuduo.dir/src/net/TcpServer.cc.o: ../src/base/copyable.h
 CMakeFiles/mymuduo.dir/src/net/TcpServer.cc.o: ../src/base/noncopyable.h
+CMakeFiles/mymuduo.dir/src/net/TcpServer.cc.o: ../src/logger/lockqueue.h
 CMakeFiles/mymuduo.dir/src/net/TcpServer.cc.o: ../src/logger/logger.h
-CMakeFiles/mymuduo.dir/src/net/TcpServer.cc.o: ../src/net/lockqueue.h
 CMakeFiles/mymuduo.dir/src/net/TcpServer.cc.o: ../src/timer/TImerQueue.h
 CMakeFiles/mymuduo.dir/src/net/TcpServer.cc.o: ../src/net/Acceptor.h
 CMakeFiles/mymuduo.dir/src/net/TcpServer.cc.o: ../src/net/Buffer.h
@@ -208,9 +208,9 @@ CMakeFiles/mymuduo.dir/src/net/poller/DefaultPoller.cc.o: ../src/net/poller/Poll
 
 CMakeFiles/mymuduo.dir/src/net/poller/EpollPoller.cc.o: ../src/base/Timestamp.h
 CMakeFiles/mymuduo.dir/src/net/poller/EpollPoller.cc.o: ../src/base/noncopyable.h
+CMakeFiles/mymuduo.dir/src/net/poller/EpollPoller.cc.o: ../src/logger/lockqueue.h
 CMakeFiles/mymuduo.dir/src/net/poller/EpollPoller.cc.o: ../src/logger/logger.h
 CMakeFiles/mymuduo.dir/src/net/poller/EpollPoller.cc.o: ../src/net/Channel.h
-CMakeFiles/mymuduo.dir/src/net/poller/EpollPoller.cc.o: ../src/net/lockqueue.h
 CMakeFiles/mymuduo.dir/src/net/poller/EpollPoller.cc.o: ../src/net/poller/EpollPoller.cc
 CMakeFiles/mymuduo.dir/src/net/poller/EpollPoller.cc.o: ../src/net/poller/EpollPoller.h
 CMakeFiles/mymuduo.dir/src/net/poller/EpollPoller.cc.o: ../src/net/poller/Poller.h
@@ -229,10 +229,10 @@ CMakeFiles/mymuduo.dir/src/timer/Timer.cc.o: ../src/timer/Timer.h
 CMakeFiles/mymuduo.dir/src/timer/TimerQueue.cc.o: ../src/base/CurrentThread.h
 CMakeFiles/mymuduo.dir/src/timer/TimerQueue.cc.o: ../src/base/Timestamp.h
 CMakeFiles/mymuduo.dir/src/timer/TimerQueue.cc.o: ../src/base/noncopyable.h
+CMakeFiles/mymuduo.dir/src/timer/TimerQueue.cc.o: ../src/logger/lockqueue.h
 CMakeFiles/mymuduo.dir/src/timer/TimerQueue.cc.o: ../src/logger/logger.h
 CMakeFiles/mymuduo.dir/src/timer/TimerQueue.cc.o: ../src/net/Channel.h
 CMakeFiles/mymuduo.dir/src/timer/TimerQueue.cc.o: ../src/net/EventLoop.h
-CMakeFiles/mymuduo.dir/src/timer/TimerQueue.cc.o: ../src/net/lockqueue.h
 CMakeFiles/mymuduo.dir/src/timer/TimerQueue.cc.o: ../src/timer/TImerQueue.h
 CMakeFiles/mymuduo.dir/src/timer/TimerQueue.cc.o: ../src/timer/Timer.h
 CMakeFiles/mymuduo.dir/src/timer/TimerQueue.cc.o: ../src/timer/TimerQueue.cc
