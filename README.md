@@ -104,7 +104,7 @@ ubuntu% ./WebServer
 
 增加了一个三级缓冲的内存池，内部实现对象池以及三层基数树优化PageCache的_pageId与span的映射关系。经过测试，效率在4个线程并发执行10轮次，每轮次申请 10000次时效率比malloc快快550%，而释放比free快29600%（因为使用了对象池管理），整体快了633%，效率非常高。
 
-![](/Users/zixuanhuang/Desktop/explain/截屏2023-05-20 16.33.04.png)
+![]([/Users/zixuanhuang/Desktop/explain/截屏2023-05-20 16.33.04.png](https://github.com/terryup/Network-Library/blob/master/explain/%E6%88%AA%E5%B1%8F2023-05-20%2016.33.04.png))
 
 ## 项目讲解
 
