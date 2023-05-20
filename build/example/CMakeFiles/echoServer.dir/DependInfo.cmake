@@ -16,6 +16,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "../src/timer"
   "../src/logger"
   "../src/net/http"
+  "../src/memory"
   )
 
 # Targets to which this target links.

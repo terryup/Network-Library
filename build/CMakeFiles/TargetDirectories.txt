@@ -12,6 +12,13 @@
 /home/zixuanhuang/webserver/build/src/http/CMakeFiles/list_install_components.dir
 /home/zixuanhuang/webserver/build/src/http/CMakeFiles/install/local.dir
 /home/zixuanhuang/webserver/build/src/http/CMakeFiles/install.dir
+/home/zixuanhuang/webserver/build/src/memory/CMakeFiles/install/strip.dir
+/home/zixuanhuang/webserver/build/src/memory/CMakeFiles/edit_cache.dir
+/home/zixuanhuang/webserver/build/src/memory/CMakeFiles/MemoryPool.dir
+/home/zixuanhuang/webserver/build/src/memory/CMakeFiles/rebuild_cache.dir
+/home/zixuanhuang/webserver/build/src/memory/CMakeFiles/list_install_components.dir
+/home/zixuanhuang/webserver/build/src/memory/CMakeFiles/install/local.dir
+/home/zixuanhuang/webserver/build/src/memory/CMakeFiles/install.dir
 /home/zixuanhuang/webserver/build/example/CMakeFiles/install/strip.dir
 /home/zixuanhuang/webserver/build/example/CMakeFiles/edit_cache.dir
 /home/zixuanhuang/webserver/build/example/CMakeFiles/echoServer.dir

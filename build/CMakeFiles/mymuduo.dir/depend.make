@@ -101,6 +101,32 @@ CMakeFiles/mymuduo.dir/src/logger/logger.cc.o: ../src/logger/lockqueue.h
 CMakeFiles/mymuduo.dir/src/logger/logger.cc.o: ../src/logger/logger.cc
 CMakeFiles/mymuduo.dir/src/logger/logger.cc.o: ../src/logger/logger.h
 
+CMakeFiles/mymuduo.dir/src/memory/CentralCache.cc.o: ../src/memory/CentralCache.cc
+CMakeFiles/mymuduo.dir/src/memory/CentralCache.cc.o: ../src/memory/CentralCache.hpp
+CMakeFiles/mymuduo.dir/src/memory/CentralCache.cc.o: ../src/memory/ObjectPool.hpp
+CMakeFiles/mymuduo.dir/src/memory/CentralCache.cc.o: ../src/memory/PageCache.hpp
+CMakeFiles/mymuduo.dir/src/memory/CentralCache.cc.o: ../src/memory/PageMap.hpp
+CMakeFiles/mymuduo.dir/src/memory/CentralCache.cc.o: ../src/memory/common.hpp
+
+CMakeFiles/mymuduo.dir/src/memory/PageCache.cc.o: ../src/memory/ObjectPool.hpp
+CMakeFiles/mymuduo.dir/src/memory/PageCache.cc.o: ../src/memory/PageCache.cc
+CMakeFiles/mymuduo.dir/src/memory/PageCache.cc.o: ../src/memory/PageCache.hpp
+CMakeFiles/mymuduo.dir/src/memory/PageCache.cc.o: ../src/memory/PageMap.hpp
+CMakeFiles/mymuduo.dir/src/memory/PageCache.cc.o: ../src/memory/common.hpp
+
+CMakeFiles/mymuduo.dir/src/memory/ThreadCache.cc.o: ../src/memory/CentralCache.hpp
+CMakeFiles/mymuduo.dir/src/memory/ThreadCache.cc.o: ../src/memory/ThreadCache.cc
+CMakeFiles/mymuduo.dir/src/memory/ThreadCache.cc.o: ../src/memory/ThreadCache.hpp
+CMakeFiles/mymuduo.dir/src/memory/ThreadCache.cc.o: ../src/memory/common.hpp
+
+CMakeFiles/mymuduo.dir/src/memory/test.cc.o: ../src/memory/ConcurrentAlloc.hpp
+CMakeFiles/mymuduo.dir/src/memory/test.cc.o: ../src/memory/ObjectPool.hpp
+CMakeFiles/mymuduo.dir/src/memory/test.cc.o: ../src/memory/PageCache.hpp
+CMakeFiles/mymuduo.dir/src/memory/test.cc.o: ../src/memory/PageMap.hpp
+CMakeFiles/mymuduo.dir/src/memory/test.cc.o: ../src/memory/ThreadCache.hpp
+CMakeFiles/mymuduo.dir/src/memory/test.cc.o: ../src/memory/common.hpp
+CMakeFiles/mymuduo.dir/src/memory/test.cc.o: ../src/memory/test.cc
+
 CMakeFiles/mymuduo.dir/src/net/Acceptor.cc.o: ../src/base/Timestamp.h
 CMakeFiles/mymuduo.dir/src/net/Acceptor.cc.o: ../src/base/copyable.h
 CMakeFiles/mymuduo.dir/src/net/Acceptor.cc.o: ../src/base/noncopyable.h

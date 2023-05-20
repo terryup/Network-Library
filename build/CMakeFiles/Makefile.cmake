@@ -15,6 +15,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/feature_tests.cxx"
   "../example/CMakeLists.txt"
   "../src/http/CMakeLists.txt"
+  "../src/memory/CMakeLists.txt"
   "/usr/share/cmake-3.10/Modules/CMakeCCompiler.cmake.in"
   "/usr/share/cmake-3.10/Modules/CMakeCCompilerABI.c"
   "/usr/share/cmake-3.10/Modules/CMakeCInformation.cmake"
@@ -113,6 +114,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/3.10.2/CMakeCXXCompiler.cmake"
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   "src/http/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "src/memory/CMakeFiles/CMakeDirectoryInformation.cmake"
   "example/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
@@ -120,5 +122,6 @@ set(CMAKE_MAKEFILE_PRODUCTS
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/mymuduo.dir/DependInfo.cmake"
   "src/http/CMakeFiles/WebServer.dir/DependInfo.cmake"
+  "src/memory/CMakeFiles/MemoryPool.dir/DependInfo.cmake"
   "example/CMakeFiles/echoServer.dir/DependInfo.cmake"
   )

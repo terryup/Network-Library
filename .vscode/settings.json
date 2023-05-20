@@ -57,6 +57,10 @@
         "typeindex": "cpp",
         "variant": "cpp",
         "unordered_set": "cpp",
-        "regex": "cpp"
+        "regex": "cpp",
+        "strstream": "cpp",
+        "csignal": "cpp",
+        "iomanip": "cpp",
+        "shared_mutex": "cpp"
     }
 }

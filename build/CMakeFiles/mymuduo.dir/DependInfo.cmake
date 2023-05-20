@@ -13,6 +13,10 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/zixuanhuang/webserver/src/http/WebServer.cc" "/home/zixuanhuang/webserver/build/CMakeFiles/mymuduo.dir/src/http/WebServer.cc.o"
   "/home/zixuanhuang/webserver/src/http/mian.cc" "/home/zixuanhuang/webserver/build/CMakeFiles/mymuduo.dir/src/http/mian.cc.o"
   "/home/zixuanhuang/webserver/src/logger/logger.cc" "/home/zixuanhuang/webserver/build/CMakeFiles/mymuduo.dir/src/logger/logger.cc.o"
+  "/home/zixuanhuang/webserver/src/memory/CentralCache.cc" "/home/zixuanhuang/webserver/build/CMakeFiles/mymuduo.dir/src/memory/CentralCache.cc.o"
+  "/home/zixuanhuang/webserver/src/memory/PageCache.cc" "/home/zixuanhuang/webserver/build/CMakeFiles/mymuduo.dir/src/memory/PageCache.cc.o"
+  "/home/zixuanhuang/webserver/src/memory/ThreadCache.cc" "/home/zixuanhuang/webserver/build/CMakeFiles/mymuduo.dir/src/memory/ThreadCache.cc.o"
+  "/home/zixuanhuang/webserver/src/memory/test.cc" "/home/zixuanhuang/webserver/build/CMakeFiles/mymuduo.dir/src/memory/test.cc.o"
   "/home/zixuanhuang/webserver/src/net/Acceptor.cc" "/home/zixuanhuang/webserver/build/CMakeFiles/mymuduo.dir/src/net/Acceptor.cc.o"
   "/home/zixuanhuang/webserver/src/net/Buffer.cc" "/home/zixuanhuang/webserver/build/CMakeFiles/mymuduo.dir/src/net/Buffer.cc.o"
   "/home/zixuanhuang/webserver/src/net/Channel.cc" "/home/zixuanhuang/webserver/build/CMakeFiles/mymuduo.dir/src/net/Channel.cc.o"
@@ -39,6 +43,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "../src/timer"
   "../src/logger"
   "../src/net/http"
+  "../src/memory"
   )
 
 # Targets to which this target links.

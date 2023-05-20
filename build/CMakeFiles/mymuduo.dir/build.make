@@ -633,6 +633,102 @@ CMakeFiles/mymuduo.dir/src/http/mian.cc.o.provides: CMakeFiles/mymuduo.dir/src/h
 CMakeFiles/mymuduo.dir/src/http/mian.cc.o.provides.build: CMakeFiles/mymuduo.dir/src/http/mian.cc.o
 
 
+CMakeFiles/mymuduo.dir/src/memory/CentralCache.cc.o: CMakeFiles/mymuduo.dir/flags.make
+CMakeFiles/mymuduo.dir/src/memory/CentralCache.cc.o: ../src/memory/CentralCache.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zixuanhuang/webserver/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/mymuduo.dir/src/memory/CentralCache.cc.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mymuduo.dir/src/memory/CentralCache.cc.o -c /home/zixuanhuang/webserver/src/memory/CentralCache.cc
+
+CMakeFiles/mymuduo.dir/src/memory/CentralCache.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mymuduo.dir/src/memory/CentralCache.cc.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zixuanhuang/webserver/src/memory/CentralCache.cc > CMakeFiles/mymuduo.dir/src/memory/CentralCache.cc.i
+
+CMakeFiles/mymuduo.dir/src/memory/CentralCache.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mymuduo.dir/src/memory/CentralCache.cc.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zixuanhuang/webserver/src/memory/CentralCache.cc -o CMakeFiles/mymuduo.dir/src/memory/CentralCache.cc.s
+
+CMakeFiles/mymuduo.dir/src/memory/CentralCache.cc.o.requires:
+
+.PHONY : CMakeFiles/mymuduo.dir/src/memory/CentralCache.cc.o.requires
+
+CMakeFiles/mymuduo.dir/src/memory/CentralCache.cc.o.provides: CMakeFiles/mymuduo.dir/src/memory/CentralCache.cc.o.requires
+	$(MAKE) -f CMakeFiles/mymuduo.dir/build.make CMakeFiles/mymuduo.dir/src/memory/CentralCache.cc.o.provides.build
+.PHONY : CMakeFiles/mymuduo.dir/src/memory/CentralCache.cc.o.provides
+
+CMakeFiles/mymuduo.dir/src/memory/CentralCache.cc.o.provides.build: CMakeFiles/mymuduo.dir/src/memory/CentralCache.cc.o
+
+
+CMakeFiles/mymuduo.dir/src/memory/PageCache.cc.o: CMakeFiles/mymuduo.dir/flags.make
+CMakeFiles/mymuduo.dir/src/memory/PageCache.cc.o: ../src/memory/PageCache.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zixuanhuang/webserver/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/mymuduo.dir/src/memory/PageCache.cc.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mymuduo.dir/src/memory/PageCache.cc.o -c /home/zixuanhuang/webserver/src/memory/PageCache.cc
+
+CMakeFiles/mymuduo.dir/src/memory/PageCache.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mymuduo.dir/src/memory/PageCache.cc.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zixuanhuang/webserver/src/memory/PageCache.cc > CMakeFiles/mymuduo.dir/src/memory/PageCache.cc.i
+
+CMakeFiles/mymuduo.dir/src/memory/PageCache.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mymuduo.dir/src/memory/PageCache.cc.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zixuanhuang/webserver/src/memory/PageCache.cc -o CMakeFiles/mymuduo.dir/src/memory/PageCache.cc.s
+
+CMakeFiles/mymuduo.dir/src/memory/PageCache.cc.o.requires:
+
+.PHONY : CMakeFiles/mymuduo.dir/src/memory/PageCache.cc.o.requires
+
+CMakeFiles/mymuduo.dir/src/memory/PageCache.cc.o.provides: CMakeFiles/mymuduo.dir/src/memory/PageCache.cc.o.requires
+	$(MAKE) -f CMakeFiles/mymuduo.dir/build.make CMakeFiles/mymuduo.dir/src/memory/PageCache.cc.o.provides.build
+.PHONY : CMakeFiles/mymuduo.dir/src/memory/PageCache.cc.o.provides
+
+CMakeFiles/mymuduo.dir/src/memory/PageCache.cc.o.provides.build: CMakeFiles/mymuduo.dir/src/memory/PageCache.cc.o
+
+
+CMakeFiles/mymuduo.dir/src/memory/ThreadCache.cc.o: CMakeFiles/mymuduo.dir/flags.make
+CMakeFiles/mymuduo.dir/src/memory/ThreadCache.cc.o: ../src/memory/ThreadCache.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zixuanhuang/webserver/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/mymuduo.dir/src/memory/ThreadCache.cc.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mymuduo.dir/src/memory/ThreadCache.cc.o -c /home/zixuanhuang/webserver/src/memory/ThreadCache.cc
+
+CMakeFiles/mymuduo.dir/src/memory/ThreadCache.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mymuduo.dir/src/memory/ThreadCache.cc.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zixuanhuang/webserver/src/memory/ThreadCache.cc > CMakeFiles/mymuduo.dir/src/memory/ThreadCache.cc.i
+
+CMakeFiles/mymuduo.dir/src/memory/ThreadCache.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mymuduo.dir/src/memory/ThreadCache.cc.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zixuanhuang/webserver/src/memory/ThreadCache.cc -o CMakeFiles/mymuduo.dir/src/memory/ThreadCache.cc.s
+
+CMakeFiles/mymuduo.dir/src/memory/ThreadCache.cc.o.requires:
+
+.PHONY : CMakeFiles/mymuduo.dir/src/memory/ThreadCache.cc.o.requires
+
+CMakeFiles/mymuduo.dir/src/memory/ThreadCache.cc.o.provides: CMakeFiles/mymuduo.dir/src/memory/ThreadCache.cc.o.requires
+	$(MAKE) -f CMakeFiles/mymuduo.dir/build.make CMakeFiles/mymuduo.dir/src/memory/ThreadCache.cc.o.provides.build
+.PHONY : CMakeFiles/mymuduo.dir/src/memory/ThreadCache.cc.o.provides
+
+CMakeFiles/mymuduo.dir/src/memory/ThreadCache.cc.o.provides.build: CMakeFiles/mymuduo.dir/src/memory/ThreadCache.cc.o
+
+
+CMakeFiles/mymuduo.dir/src/memory/test.cc.o: CMakeFiles/mymuduo.dir/flags.make
+CMakeFiles/mymuduo.dir/src/memory/test.cc.o: ../src/memory/test.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zixuanhuang/webserver/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object CMakeFiles/mymuduo.dir/src/memory/test.cc.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mymuduo.dir/src/memory/test.cc.o -c /home/zixuanhuang/webserver/src/memory/test.cc
+
+CMakeFiles/mymuduo.dir/src/memory/test.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mymuduo.dir/src/memory/test.cc.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zixuanhuang/webserver/src/memory/test.cc > CMakeFiles/mymuduo.dir/src/memory/test.cc.i
+
+CMakeFiles/mymuduo.dir/src/memory/test.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mymuduo.dir/src/memory/test.cc.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zixuanhuang/webserver/src/memory/test.cc -o CMakeFiles/mymuduo.dir/src/memory/test.cc.s
+
+CMakeFiles/mymuduo.dir/src/memory/test.cc.o.requires:
+
+.PHONY : CMakeFiles/mymuduo.dir/src/memory/test.cc.o.requires
+
+CMakeFiles/mymuduo.dir/src/memory/test.cc.o.provides: CMakeFiles/mymuduo.dir/src/memory/test.cc.o.requires
+	$(MAKE) -f CMakeFiles/mymuduo.dir/build.make CMakeFiles/mymuduo.dir/src/memory/test.cc.o.provides.build
+.PHONY : CMakeFiles/mymuduo.dir/src/memory/test.cc.o.provides
+
+CMakeFiles/mymuduo.dir/src/memory/test.cc.o.provides.build: CMakeFiles/mymuduo.dir/src/memory/test.cc.o
+
+
 # Object files for target mymuduo
 mymuduo_OBJECTS = \
 "CMakeFiles/mymuduo.dir/src/base/CurrentThread.cc.o" \
@@ -658,7 +754,11 @@ mymuduo_OBJECTS = \
 "CMakeFiles/mymuduo.dir/src/http/HttpResponse_test.cc.o" \
 "CMakeFiles/mymuduo.dir/src/http/HttpServer_test.cc.o" \
 "CMakeFiles/mymuduo.dir/src/http/WebServer.cc.o" \
-"CMakeFiles/mymuduo.dir/src/http/mian.cc.o"
+"CMakeFiles/mymuduo.dir/src/http/mian.cc.o" \
+"CMakeFiles/mymuduo.dir/src/memory/CentralCache.cc.o" \
+"CMakeFiles/mymuduo.dir/src/memory/PageCache.cc.o" \
+"CMakeFiles/mymuduo.dir/src/memory/ThreadCache.cc.o" \
+"CMakeFiles/mymuduo.dir/src/memory/test.cc.o"
 
 # External object files for target mymuduo
 mymuduo_EXTERNAL_OBJECTS =
@@ -687,9 +787,13 @@ mymuduo_EXTERNAL_OBJECTS =
 ../lib/libmymuduo.so: CMakeFiles/mymuduo.dir/src/http/HttpServer_test.cc.o
 ../lib/libmymuduo.so: CMakeFiles/mymuduo.dir/src/http/WebServer.cc.o
 ../lib/libmymuduo.so: CMakeFiles/mymuduo.dir/src/http/mian.cc.o
+../lib/libmymuduo.so: CMakeFiles/mymuduo.dir/src/memory/CentralCache.cc.o
+../lib/libmymuduo.so: CMakeFiles/mymuduo.dir/src/memory/PageCache.cc.o
+../lib/libmymuduo.so: CMakeFiles/mymuduo.dir/src/memory/ThreadCache.cc.o
+../lib/libmymuduo.so: CMakeFiles/mymuduo.dir/src/memory/test.cc.o
 ../lib/libmymuduo.so: CMakeFiles/mymuduo.dir/build.make
 ../lib/libmymuduo.so: CMakeFiles/mymuduo.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/zixuanhuang/webserver/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Linking CXX shared library ../lib/libmymuduo.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/zixuanhuang/webserver/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Linking CXX shared library ../lib/libmymuduo.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/mymuduo.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -721,6 +825,10 @@ CMakeFiles/mymuduo.dir/requires: CMakeFiles/mymuduo.dir/src/http/HttpResponse_te
 CMakeFiles/mymuduo.dir/requires: CMakeFiles/mymuduo.dir/src/http/HttpServer_test.cc.o.requires
 CMakeFiles/mymuduo.dir/requires: CMakeFiles/mymuduo.dir/src/http/WebServer.cc.o.requires
 CMakeFiles/mymuduo.dir/requires: CMakeFiles/mymuduo.dir/src/http/mian.cc.o.requires
+CMakeFiles/mymuduo.dir/requires: CMakeFiles/mymuduo.dir/src/memory/CentralCache.cc.o.requires
+CMakeFiles/mymuduo.dir/requires: CMakeFiles/mymuduo.dir/src/memory/PageCache.cc.o.requires
+CMakeFiles/mymuduo.dir/requires: CMakeFiles/mymuduo.dir/src/memory/ThreadCache.cc.o.requires
+CMakeFiles/mymuduo.dir/requires: CMakeFiles/mymuduo.dir/src/memory/test.cc.o.requires
 
 .PHONY : CMakeFiles/mymuduo.dir/requires
 

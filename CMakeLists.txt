@@ -13,6 +13,7 @@ include_directories(
     ${PROJECT_SOURCE_DIR}/src/timer
     ${PROJECT_SOURCE_DIR}/src/logger
     ${PROJECT_SOURCE_DIR}/src/net/http
+    ${PROJECT_SOURCE_DIR}/src/memory
     )
 
 # 包含这些目录下的.cc文件
@@ -22,6 +23,7 @@ aux_source_directory(${PROJECT_SOURCE_DIR}/src/net/poller SRC_POLLER)
 aux_source_directory(${PROJECT_SOURCE_DIR}/src/timer SRC_TIMER)
 aux_source_directory(${PROJECT_SOURCE_DIR}/src/logger SRC_LOG)
 aux_source_directory(${PROJECT_SOURCE_DIR}/src/http SRC_HTTP)
+aux_source_directory(${PROJECT_SOURCE_DIR}/src/memory SRC_MEMORY)
 
 # 设置编译选项
 set(CXX_FLAGS -g -Wall -std=c++11)
@@ -34,6 +36,7 @@ add_library(mymuduo SHARED
             ${SRC_TIMER}
             ${SRC_LOG}
             ${SRC_HTTP}
+            ${SRC_MEMORY}
             )
 
 # 目标动态库所需连接的库（这里需要连接libpthread.so）
@@ -52,6 +55,7 @@ install(DIRECTORY ${PROJECT_SOURCE_DIR}/src/ DESTINATION include/mymuduo
 
 
 add_subdirectory(src/http)
+add_subdirectory(src/memory)
 
 #   加载example
 add_subdirectory(example)

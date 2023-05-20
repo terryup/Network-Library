@@ -23,6 +23,10 @@ file(REMOVE_RECURSE
   "CMakeFiles/mymuduo.dir/src/http/HttpServer_test.cc.o"
   "CMakeFiles/mymuduo.dir/src/http/WebServer.cc.o"
   "CMakeFiles/mymuduo.dir/src/http/mian.cc.o"
+  "CMakeFiles/mymuduo.dir/src/memory/CentralCache.cc.o"
+  "CMakeFiles/mymuduo.dir/src/memory/PageCache.cc.o"
+  "CMakeFiles/mymuduo.dir/src/memory/ThreadCache.cc.o"
+  "CMakeFiles/mymuduo.dir/src/memory/test.cc.o"
   "../lib/libmymuduo.pdb"
   "../lib/libmymuduo.so"
 )

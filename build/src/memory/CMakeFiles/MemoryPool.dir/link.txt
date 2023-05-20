@@ -1,0 +1,1 @@
+/usr/bin/c++  -g  -rdynamic CMakeFiles/MemoryPool.dir/CentralCache.cc.o CMakeFiles/MemoryPool.dir/PageCache.cc.o CMakeFiles/MemoryPool.dir/ThreadCache.cc.o CMakeFiles/MemoryPool.dir/test.cc.o  -o ../../../src/memory/MemoryPool -Wl,-rpath,/home/zixuanhuang/webserver/lib ../../../lib/libmymuduo.so -lpthread 

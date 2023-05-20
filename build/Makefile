@@ -58,7 +58,7 @@ CMAKE_BINARY_DIR = /home/zixuanhuang/webserver/build
 
 # Special rule for the target edit_cache
 edit_cache:
-	@echo "No interactive CMake dialog available..."
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
 	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
@@ -69,19 +69,19 @@ edit_cache/fast: edit_cache
 
 # Special rule for the target install/strip
 install/strip: preinstall
-	@echo "Installing the project stripped..."
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
 	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip
 
 # Special rule for the target install/strip
 install/strip/fast: preinstall/fast
-	@echo "Installing the project stripped..."
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
 	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip/fast
 
 # Special rule for the target rebuild_cache
 rebuild_cache:
-	@echo "Running CMake to regenerate build system..."
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
 	/usr/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
@@ -92,7 +92,7 @@ rebuild_cache/fast: rebuild_cache
 
 # Special rule for the target list_install_components
 list_install_components:
-	@echo "Available install components are: \"Unspecified\""
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
 .PHONY : list_install_components
 
 # Special rule for the target list_install_components
@@ -102,25 +102,25 @@ list_install_components/fast: list_install_components
 
 # Special rule for the target install/local
 install/local: preinstall
-	@echo "Installing only the local directory..."
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
 	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local
 
 # Special rule for the target install/local
 install/local/fast: preinstall/fast
-	@echo "Installing only the local directory..."
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
 	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local/fast
 
 # Special rule for the target install
 install: preinstall
-	@echo "Install the project..."
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
 	/usr/bin/cmake -P cmake_install.cmake
 .PHONY : install
 
 # Special rule for the target install
 install/fast: preinstall/fast
-	@echo "Install the project..."
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
 	/usr/bin/cmake -P cmake_install.cmake
 .PHONY : install/fast
 
@@ -181,6 +181,19 @@ WebServer: cmake_check_build_system
 WebServer/fast:
 	$(MAKE) -f src/http/CMakeFiles/WebServer.dir/build.make src/http/CMakeFiles/WebServer.dir/build
 .PHONY : WebServer/fast
+
+#=============================================================================
+# Target rules for targets named MemoryPool
+
+# Build rule for target.
+MemoryPool: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 MemoryPool
+.PHONY : MemoryPool
+
+# fast build rule for target.
+MemoryPool/fast:
+	$(MAKE) -f src/memory/CMakeFiles/MemoryPool.dir/build.make src/memory/CMakeFiles/MemoryPool.dir/build
+.PHONY : MemoryPool/fast
 
 #=============================================================================
 # Target rules for targets named echoServer
@@ -437,6 +450,114 @@ src/logger/logger.s: src/logger/logger.cc.s
 src/logger/logger.cc.s:
 	$(MAKE) -f CMakeFiles/mymuduo.dir/build.make CMakeFiles/mymuduo.dir/src/logger/logger.cc.s
 .PHONY : src/logger/logger.cc.s
+
+src/memory/CentralCache.o: src/memory/CentralCache.cc.o
+
+.PHONY : src/memory/CentralCache.o
+
+# target to build an object file
+src/memory/CentralCache.cc.o:
+	$(MAKE) -f CMakeFiles/mymuduo.dir/build.make CMakeFiles/mymuduo.dir/src/memory/CentralCache.cc.o
+.PHONY : src/memory/CentralCache.cc.o
+
+src/memory/CentralCache.i: src/memory/CentralCache.cc.i
+
+.PHONY : src/memory/CentralCache.i
+
+# target to preprocess a source file
+src/memory/CentralCache.cc.i:
+	$(MAKE) -f CMakeFiles/mymuduo.dir/build.make CMakeFiles/mymuduo.dir/src/memory/CentralCache.cc.i
+.PHONY : src/memory/CentralCache.cc.i
+
+src/memory/CentralCache.s: src/memory/CentralCache.cc.s
+
+.PHONY : src/memory/CentralCache.s
+
+# target to generate assembly for a file
+src/memory/CentralCache.cc.s:
+	$(MAKE) -f CMakeFiles/mymuduo.dir/build.make CMakeFiles/mymuduo.dir/src/memory/CentralCache.cc.s
+.PHONY : src/memory/CentralCache.cc.s
+
+src/memory/PageCache.o: src/memory/PageCache.cc.o
+
+.PHONY : src/memory/PageCache.o
+
+# target to build an object file
+src/memory/PageCache.cc.o:
+	$(MAKE) -f CMakeFiles/mymuduo.dir/build.make CMakeFiles/mymuduo.dir/src/memory/PageCache.cc.o
+.PHONY : src/memory/PageCache.cc.o
+
+src/memory/PageCache.i: src/memory/PageCache.cc.i
+
+.PHONY : src/memory/PageCache.i
+
+# target to preprocess a source file
+src/memory/PageCache.cc.i:
+	$(MAKE) -f CMakeFiles/mymuduo.dir/build.make CMakeFiles/mymuduo.dir/src/memory/PageCache.cc.i
+.PHONY : src/memory/PageCache.cc.i
+
+src/memory/PageCache.s: src/memory/PageCache.cc.s
+
+.PHONY : src/memory/PageCache.s
+
+# target to generate assembly for a file
+src/memory/PageCache.cc.s:
+	$(MAKE) -f CMakeFiles/mymuduo.dir/build.make CMakeFiles/mymuduo.dir/src/memory/PageCache.cc.s
+.PHONY : src/memory/PageCache.cc.s
+
+src/memory/ThreadCache.o: src/memory/ThreadCache.cc.o
+
+.PHONY : src/memory/ThreadCache.o
+
+# target to build an object file
+src/memory/ThreadCache.cc.o:
+	$(MAKE) -f CMakeFiles/mymuduo.dir/build.make CMakeFiles/mymuduo.dir/src/memory/ThreadCache.cc.o
+.PHONY : src/memory/ThreadCache.cc.o
+
+src/memory/ThreadCache.i: src/memory/ThreadCache.cc.i
+
+.PHONY : src/memory/ThreadCache.i
+
+# target to preprocess a source file
+src/memory/ThreadCache.cc.i:
+	$(MAKE) -f CMakeFiles/mymuduo.dir/build.make CMakeFiles/mymuduo.dir/src/memory/ThreadCache.cc.i
+.PHONY : src/memory/ThreadCache.cc.i
+
+src/memory/ThreadCache.s: src/memory/ThreadCache.cc.s
+
+.PHONY : src/memory/ThreadCache.s
+
+# target to generate assembly for a file
+src/memory/ThreadCache.cc.s:
+	$(MAKE) -f CMakeFiles/mymuduo.dir/build.make CMakeFiles/mymuduo.dir/src/memory/ThreadCache.cc.s
+.PHONY : src/memory/ThreadCache.cc.s
+
+src/memory/test.o: src/memory/test.cc.o
+
+.PHONY : src/memory/test.o
+
+# target to build an object file
+src/memory/test.cc.o:
+	$(MAKE) -f CMakeFiles/mymuduo.dir/build.make CMakeFiles/mymuduo.dir/src/memory/test.cc.o
+.PHONY : src/memory/test.cc.o
+
+src/memory/test.i: src/memory/test.cc.i
+
+.PHONY : src/memory/test.i
+
+# target to preprocess a source file
+src/memory/test.cc.i:
+	$(MAKE) -f CMakeFiles/mymuduo.dir/build.make CMakeFiles/mymuduo.dir/src/memory/test.cc.i
+.PHONY : src/memory/test.cc.i
+
+src/memory/test.s: src/memory/test.cc.s
+
+.PHONY : src/memory/test.s
+
+# target to generate assembly for a file
+src/memory/test.cc.s:
+	$(MAKE) -f CMakeFiles/mymuduo.dir/build.make CMakeFiles/mymuduo.dir/src/memory/test.cc.s
+.PHONY : src/memory/test.cc.s
 
 src/net/Acceptor.o: src/net/Acceptor.cc.o
 
@@ -857,6 +978,7 @@ help:
 	@echo "... install/local"
 	@echo "... install"
 	@echo "... WebServer"
+	@echo "... MemoryPool"
 	@echo "... echoServer"
 	@echo "... src/base/CurrentThread.o"
 	@echo "... src/base/CurrentThread.i"
@@ -885,6 +1007,18 @@ help:
 	@echo "... src/logger/logger.o"
 	@echo "... src/logger/logger.i"
 	@echo "... src/logger/logger.s"
+	@echo "... src/memory/CentralCache.o"
+	@echo "... src/memory/CentralCache.i"
+	@echo "... src/memory/CentralCache.s"
+	@echo "... src/memory/PageCache.o"
+	@echo "... src/memory/PageCache.i"
+	@echo "... src/memory/PageCache.s"
+	@echo "... src/memory/ThreadCache.o"
+	@echo "... src/memory/ThreadCache.i"
+	@echo "... src/memory/ThreadCache.s"
+	@echo "... src/memory/test.o"
+	@echo "... src/memory/test.i"
+	@echo "... src/memory/test.s"
 	@echo "... src/net/Acceptor.o"
 	@echo "... src/net/Acceptor.i"
 	@echo "... src/net/Acceptor.s"
